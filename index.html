@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resume Builder By Rameez Khan</h1>
+    <form id="resumeform">
+        <fieldset>
+            <legend>Personal Information</legend>
+           
+           <label for="username">CV URL:</label>
+           <input type="text" id="username" name="username" required/><br/>
+<br>
+            <label for="Name">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+<br>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email"required><br>
+<br>
+            <label for="Phone">Phone: </label>
+            <input type="text" id="phone" name="phone" required><br>
+        
+
+
+            <label for="profilePicture">Profile Picture</label>
+            <input type="file" id="profilePicture" name="profilePicture accept="image/*" required>
+
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="Academics">Academics: </label>
+            <textarea name="Academics" id="Academics" rows="4" required></textarea><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <label for="Experience">Experience: </label>
+            <textarea name="Experience" id="Experience" rows="4" required></textarea><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Skills: </label>
+            <textarea name="Skills" id="Skills" rows="4" required></textarea><br>
+
+        </fieldset>
+<br>
+        <button type="submit">Generate Resume </button>
+
+    </form>
+
+    <div id="resumeOutput">
+        <!--Resume will be generated below-->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
